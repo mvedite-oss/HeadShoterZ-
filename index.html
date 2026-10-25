@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headshoterz - Ranking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 HEADSHOTERZ</h1>
+            <p>Placar de Líderes e Estatísticas</p>
+        </header>
+
+        <section class="form-container">
+            <h2>Cadastrar Novo Jogador</h2>
+            <form id="player-form">
+                <input type="text" id="username" placeholder="Nome do Jogador" required>
+                <input type="number" id="score" placeholder="Pontuação" min="0" required>
+                <input type="number" id="headshots" placeholder="Headshots" min="0" required>
+                <button type="submit">Adicionar Jogador</button>
+            </form>
+        </section>
+
+        <section class="leaderboard">
+            <h2>Ranking Geral</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Jogador</th>
+                        <th>Pontuação</th>
+                        <th>Headshots</th>
+                    </tr>
+                </thead>
+                <tbody id="player-table-body">
+                    <!-- Conteúdo carregado via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

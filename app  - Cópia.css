@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00e676;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #a8a8b3;
+}
+
+.form-container, .leaderboard {
+    background: #202024;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #00e676;
+    border-bottom: 2px solid #29292e;
+    padding-bottom: 8px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #29292e;
+    background: #121214;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00e676;
+}
+
+button {
+    padding: 12px 20px;
+    background: #00e676;
+    color: #121214;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #00c853;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #29292e;
+    color: #a8a8b3;
+}
+
+tr:nth-child(even) {
+    background-color: #17171a;
+}
+
+tr:hover {
+    background-color: #29292e;
+}
+
